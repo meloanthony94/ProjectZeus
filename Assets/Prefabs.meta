@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 7386317e2ab841d4d941cc2fa0b13d20
+=======
+guid: c09e90f62a7774142a57a75f31abe5ff
+>>>>>>> 683465d... init enemyHighway function
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

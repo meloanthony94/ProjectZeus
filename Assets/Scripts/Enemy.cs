@@ -1,11 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class Enemy : MonoBehaviour
 {
     //Enums
-    public enum EnemyType
+    public enum Type
     {
         Empty, Rock, Paper, Sissors
     }
@@ -16,7 +18,7 @@ public class Enemy : MonoBehaviour
     }
 
     [SerializeField]
-    EnemyType myType = EnemyType.Empty;
+    public Type myType = Type.Empty;
 
     [SerializeField]
     SelectedState currentSelection = SelectedState.Default;
@@ -33,6 +35,11 @@ public class Enemy : MonoBehaviour
 
     public int Index { get => index; set => index = value; }
 
+    public EnemyHighway highway;
+    public bool selected;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,22 +51,22 @@ public class Enemy : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            TypeSwap(EnemyType.Empty);
+            TypeSwap(Type.Empty);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            TypeSwap(EnemyType.Rock);
+            TypeSwap(Type.Rock);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            TypeSwap(EnemyType.Paper);
+            TypeSwap(Type.Paper);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            TypeSwap(EnemyType.Sissors);
+            TypeSwap(Type.Sissors);
         }
     }
 
@@ -82,17 +89,20 @@ public class Enemy : MonoBehaviour
         //check for cooldown
         //report my index
         currentSelection = SelectedState.Selected;
+
+        // if select is a valid move
+        highway.Register(this);
     }
 
-    public void TypeSwap(EnemyType newType)
+    public void TypeSwap(Type newType)
     {
         myType = newType;
 
-        for (int i = 0; i < TypeVisuals.Length; i++)
-        {
-            TypeVisuals[i].SetActive(false);
-        }
+        //for (int i = 0; i < TypeVisuals.Length; i++)
+        //{
+        //    TypeVisuals[i].SetActive(false);
+        //}
 
-        TypeVisuals[(int)newType].SetActive(true);
+        //TypeVisuals[(int)newType].SetActive(true);
     }
 }
