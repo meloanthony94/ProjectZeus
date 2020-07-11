@@ -43,12 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c4699c1fa8c0548bd4779c8cafc452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8892067176599262384, guid: 53dfeb92e13b73942bd95d93d68abdbf,
+  enemyPrefab: {fileID: 6881012348898741379, guid: 252f02c0caba7a044a99c670ff46b2e8,
     type: 3}
   enemyCount: 0
   spacing: 0.5
   currentIndex: 0
   frameCount: 11
   visibleCount: 6
+  isMoving: 1
   enemyArray: []
   constantRef: {fileID: 11400000, guid: 9f29d29876a70a547a4d6d2682f558c5, type: 2}
