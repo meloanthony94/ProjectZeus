@@ -105,7 +105,7 @@ public class EnemyHighway : MonoBehaviour
             e.gameObject.name = $"Enemy [{i}]";
             e.gameObject.transform.localPosition = new Vector3(spacing * i, 0, 0);
             e.highway = this;
-            e.myType =(Enemy.Type)(i % 4);
+            e.myType =(entityType.Type)(i % 4);
             enemyArray.Add(e);
         }
         EditorUtility.SetDirty(this);
@@ -130,7 +130,7 @@ public class EnemyHighway : MonoBehaviour
         if (selectHolder)
         {
             // swap
-            Enemy.Type tmpType = selectHolder.myType;
+            entityType.Type tmpType = selectHolder.myType;
             selectHolder.TypeSwap(e.myType);
             e.TypeSwap(tmpType);
             selectHolder = null;

@@ -7,10 +7,10 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     //Enums
-    public enum Type
-    {
-        Empty, Rock, Paper, Sissors
-    }
+  // public enum Type
+  // {
+  //     Empty, Rock, Paper, Sissors
+  // }
 
     enum SelectedState
     {
@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
     }
 
     [SerializeField]
-    public Type myType = Type.Empty;
+    public entityType.Type myType = entityType.Type.Empty;
 
     [SerializeField]
     SelectedState currentSelection = SelectedState.Default;
@@ -45,9 +45,9 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (myType != Type.Empty)
+        if (myType != entityType.Type.Empty)
         {
-            TypeVisuals[(int)Type.Empty].SetActive(false);
+            TypeVisuals[(int)entityType.Type.Empty].SetActive(false);
             TypeVisuals[(int)myType].SetActive(true);
         }
 
@@ -59,22 +59,22 @@ public class Enemy : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            TypeSwap(Type.Empty);
+            TypeSwap(entityType.Type.Empty);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            TypeSwap(Type.Rock);
+            TypeSwap(entityType.Type.Rock);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            TypeSwap(Type.Paper);
+            TypeSwap(entityType.Type.Paper);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            TypeSwap(Type.Sissors);
+            TypeSwap(entityType.Type.Sissors);
         }
     }
 
@@ -101,7 +101,7 @@ public class Enemy : MonoBehaviour
         highway.Register(this);
     }
 
-    public void TypeSwap(Type newType)
+    public void TypeSwap(entityType.Type newType)
     {
         myType = newType;
 
