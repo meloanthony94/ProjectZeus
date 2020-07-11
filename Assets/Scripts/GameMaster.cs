@@ -12,6 +12,11 @@ public class GameMaster : MonoBehaviour
         Application.targetFrameRate = targetFramerate;
     }
 
+    private void Start()
+    {
+        Screen.SetResolution(960, 600, true);
+    }
+
     // Update is called once per frame
     void Update()
     {

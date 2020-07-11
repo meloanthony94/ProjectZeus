@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -36,9 +35,9 @@ public class EnemyHighway : MonoBehaviour
     void Start()
     {
         int maxCount = Math.Min(visibleCount, enemyArray.Count);
-        for (int i = 0; i < maxCount; i++)
+        for (int i = 0; i < enemyArray.Count; i++)
         {
-            enemyArray[i].gameObject.SetActive(true);
+            enemyArray[i].gameObject.SetActive(i < maxCount ? true : false);
         }
     }
 
@@ -67,7 +66,7 @@ public class EnemyHighway : MonoBehaviour
                 if (frameCount % constantRef.FRAME_SPEED == 0)
                 {
                     // move
-                    this.gameObject.transform.position += new Vector3(-spacing, 0, 0);
+                    this.gameObject.transform.position += new Vector3(-spacing * transform.localScale.x, 0, 0);
 
                     enemyArray[currentIndex].gameObject.SetActive(false);
 
@@ -105,7 +104,6 @@ public class EnemyHighway : MonoBehaviour
 
             e.gameObject.name = $"Enemy [{i}]";
             e.gameObject.transform.localPosition = new Vector3(spacing * i, 0, 0);
-            e.gameObject.SetActive(false);
             e.highway = this;
             e.myType =(Enemy.Type)(i % 4);
             enemyArray.Add(e);
