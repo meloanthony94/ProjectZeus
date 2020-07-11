@@ -23,10 +23,35 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     SelectedState currentSelection = SelectedState.Default;
 
+    private SelectedState CurrentSelection
+    {
+        get => currentSelection;
+        set
+        {
+            if (currentSelection != value)
+            {
+                currentSelection = value;
+                switch (currentSelection)
+                {
+                    case SelectedState.Default:
+                        highlightAnimator.SetTrigger("ToDefault");
+                        break;
+                    case SelectedState.Hover:
+                        highlightAnimator.SetTrigger("ToHover");
+                        break;
+                    case SelectedState.Selected:
+                        highlightAnimator.SetTrigger("ToSelect");
+                        break;
+                }
+            }
+        }
+    }
+
     [SerializeField]
     GameObject[] TypeVisuals;
 
     Animator currentAnimator = null;
+    public Animator highlightAnimator = null;
 
     //Flags
     [SerializeField]
@@ -75,7 +100,7 @@ public class Enemy : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             TypeSwap(entityType.Type.Sissors);
-        }
+        }       
     }
 
     private void OnMouseEnter()
@@ -83,7 +108,10 @@ public class Enemy : MonoBehaviour
         if (gameState.CanSelect)
         {
             isHoveredFlag = true;
-            currentSelection = SelectedState.Hover;
+            if (CurrentSelection != SelectedState.Selected)
+            {
+                CurrentSelection = SelectedState.Hover;
+            }
         }
     }
 
@@ -91,7 +119,10 @@ public class Enemy : MonoBehaviour
     {
         isHoveredFlag = false;
         //Make sure to check that it's not selected first
-        currentSelection = SelectedState.Default;
+        if (CurrentSelection != SelectedState.Selected)
+        {
+            CurrentSelection = SelectedState.Default;
+        }
     }
 
     private void OnMouseDown()
@@ -100,7 +131,7 @@ public class Enemy : MonoBehaviour
         {
             //check for cooldown
             //report my index
-            currentSelection = SelectedState.Selected;
+            CurrentSelection = SelectedState.Selected;
 
             // if select is a valid move
             highway.Register(this);
@@ -119,5 +150,6 @@ public class Enemy : MonoBehaviour
         TypeVisuals[(int)newType].SetActive(true);
 
         currentAnimator = TypeVisuals[(int)myType].GetComponent<Animator>();
+        CurrentSelection = SelectedState.Default;
     }
 }
