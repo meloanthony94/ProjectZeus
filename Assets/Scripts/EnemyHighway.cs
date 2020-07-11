@@ -7,8 +7,15 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class EnemyHighway : MonoBehaviour
 {
+    [Header("Prefab")]
     public Enemy enemyPrefab;
+
+    [Header("Generate Enemy")]
+    public bool e_populateEnemy = false;
+
+    [Header("Parameters")]
     public int enemyCount = 60;
+
     public float spacing = 1;
     public int currentIndex = 0;
     public int frameCount = 0;
@@ -18,18 +25,12 @@ public class EnemyHighway : MonoBehaviour
     [SerializeField]
     public List<Enemy> enemyArray;
 
-    private bool e_populateEnemy = false;
+    
 
     public Constant constantRef;
 
     private Enemy selectHolder;
-
-    private void OnValidate()
-    {
-#if UNITY_EDITOR
-        e_populateEnemy = true;
-#endif
-    }
+    public GameState gameState;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +58,7 @@ public class EnemyHighway : MonoBehaviour
 
         if (Application.isPlaying && isMoving)
         {
-
+            // Move Enemy
             frameCount = Time.frameCount;
 
             if (currentIndex < enemyCount)
@@ -78,6 +79,13 @@ public class EnemyHighway : MonoBehaviour
                     currentIndex++;
 
                 }
+            }
+
+            // Check if current index is larger than the selectHolder's
+            // if true reset it to null
+            if (selectHolder && currentIndex > selectHolder.Index)
+            {
+                selectHolder = null;
             }
         }
 
@@ -105,7 +113,9 @@ public class EnemyHighway : MonoBehaviour
             e.gameObject.name = $"Enemy [{i}]";
             e.gameObject.transform.localPosition = new Vector3(spacing * i, 0, 0);
             e.highway = this;
+
             e.myType =(entityType.Type)(i % 4);
+            e.Index = i;
             enemyArray.Add(e);
         }
         EditorUtility.SetDirty(this);
@@ -134,6 +144,7 @@ public class EnemyHighway : MonoBehaviour
             selectHolder.TypeSwap(e.myType);
             e.TypeSwap(tmpType);
             selectHolder = null;
+            gameState.TriggerCoolDown?.Invoke();
         }
         else
         {

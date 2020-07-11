@@ -32,13 +32,13 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     bool isHoveredFlag = false;
 
-    //
+    [SerializeField]
     int index = -1;
 
     public int Index { get => index; set => index = value; }
 
     public EnemyHighway highway;
-    public bool selected;
+    public GameState gameState;
 
 
 
@@ -80,8 +80,11 @@ public class Enemy : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        isHoveredFlag = true;
-        currentSelection = SelectedState.Hover;
+        if (gameState.CanSelect)
+        {
+            isHoveredFlag = true;
+            currentSelection = SelectedState.Hover;
+        }
     }
 
     private void OnMouseExit()
@@ -93,12 +96,15 @@ public class Enemy : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //check for cooldown
-        //report my index
-        currentSelection = SelectedState.Selected;
+        if (gameState.CanSelect)
+        {
+            //check for cooldown
+            //report my index
+            currentSelection = SelectedState.Selected;
 
-        // if select is a valid move
-        highway.Register(this);
+            // if select is a valid move
+            highway.Register(this);
+        }
     }
 
     public void TypeSwap(entityType.Type newType)

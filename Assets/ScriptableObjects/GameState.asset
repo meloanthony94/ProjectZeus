@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e08ad278ffc15c545b733a81ee07c4ec, type: 3}
-  m_Name: Constant
+  m_Script: {fileID: 11500000, guid: 053ebf7b6b490ed44b3101cf5631cf22, type: 3}
+  m_Name: GameState
   m_EditorClassIdentifier: 
-  frameSpeed: 120
-  targetFrameRate: 60
-  cooldownSpeed: 240
+  CanSelect: 1

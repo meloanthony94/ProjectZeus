@@ -461,8 +461,9 @@ MonoBehaviour:
   - {fileID: 1780268712}
   - {fileID: 2144693679}
   isHoveredFlag: 0
+  index: 0
   highway: {fileID: 0}
-  selected: 0
+  gameState: {fileID: 11400000, guid: 189a094a728be724e89dd70894c3e00c, type: 2}
 --- !u!61 &6881012348898741376
 BoxCollider2D:
   m_ObjectHideFlags: 0
