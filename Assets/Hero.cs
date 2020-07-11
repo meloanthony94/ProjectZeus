@@ -27,6 +27,11 @@ public class Hero : MonoBehaviour
 
     int commandIndex = 0;
 
+
+    //Debug Only
+    [SerializeField]
+    IconIndicator debugIcon;
+
     private void Awake()
     {
         //heroAnimator.GetComponent<Animator>();
@@ -50,6 +55,7 @@ public class Hero : MonoBehaviour
                 {
                     commandIndex++;
                     currentHeroType = commandGenerator.commandArray[commandIndex].heroCommandType;
+                    debugIcon.ChangeIcon((int)currentHeroType);
                 }
             }
 
