@@ -22,7 +22,9 @@ public class Enemy : MonoBehaviour
     SelectedState currentSelection = SelectedState.Default;
 
     [SerializeField]
-    GameObject[] TypeVisuals; 
+    GameObject[] TypeVisuals;
+
+    Animator currentAnimator = null;
 
     //Flags
     [SerializeField]
@@ -36,7 +38,13 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (myType != EnemyType.Empty)
+        {
+            TypeVisuals[(int)EnemyType.Empty].SetActive(false);
+            TypeVisuals[(int)myType].SetActive(true);
+        }
+
+        currentAnimator = TypeVisuals[(int)myType].GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -78,7 +86,6 @@ public class Enemy : MonoBehaviour
 
     private void OnMouseDown()
     {
-        print("CLICKED");
         //check for cooldown
         //report my index
         currentSelection = SelectedState.Selected;
@@ -94,5 +101,7 @@ public class Enemy : MonoBehaviour
         }
 
         TypeVisuals[(int)newType].SetActive(true);
+
+        currentAnimator = TypeVisuals[(int)myType].GetComponent<Animator>();
     }
 }
