@@ -50,4 +50,14 @@ public class GameMaster : MonoBehaviour
         isCooldown = true;
         gameState.CanSelect = false;
     }
+
+    public void HandleWinState()
+    {
+
+    }
+
+    public void HandleLoseState()
+    {
+
+    }
 }
