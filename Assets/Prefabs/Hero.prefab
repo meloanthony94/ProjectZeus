@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1831360888}
   - component: {fileID: 1831360890}
   - component: {fileID: 1831360889}
+  - component: {fileID: 3810174002846696309}
   m_Layer: 8
   m_Name: Debug Indicator
   m_TagString: Untagged
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2843812141354fb4ba31d4f62ebe35f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a384b4738e5bc79488238b0e18049d32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -89,7 +90,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831360887}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dbfa4c828bd9cb044b611e4041d2982d, type: 3}
   m_Name: 
@@ -99,6 +100,25 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20d4cd10f542d2c46a1698e4208f329b, type: 3}
   - {fileID: 21300000, guid: bbed662ab5b411746aef186177af2b4d, type: 3}
   - {fileID: 21300000, guid: 2843812141354fb4ba31d4f62ebe35f0, type: 3}
+--- !u!95 &3810174002846696309
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831360887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e996e3b2890f754f8ad527e4dd63371, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3907813998291393099
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,6 +199,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  indicatorAnimator: {fileID: 3810174002846696309}
   attackClip: {fileID: 8300000, guid: b6486f10b8f810e4988f18a824fe0789, type: 3}
   debugIcon: {fileID: 1831360889}
 --- !u!212 &3907813998291393096
