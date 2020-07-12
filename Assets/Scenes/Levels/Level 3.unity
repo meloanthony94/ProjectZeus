@@ -8638,7 +8638,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 88d142105658f794598ded7ee6c1bc80, type: 2}
+      objectReference: {fileID: 9100000, guid: 8bba8097b796ad44bbeb0794dca85e36, type: 2}
     - target: {fileID: 3907813998291393097, guid: 17a2571c9aa79484c8c2c50ad39109e2,
         type: 3}
       propertyPath: enemyHighwayRef

@@ -48,7 +48,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 43d0d78ae1c4cf24ba39adde5ab309ac, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0ba767cea75e09a4bb3df1ccb01fc790, type: 2}
   m_Tag: 
   m_SpeedParameter: PausedSpeed
   m_MirrorParameter: 
@@ -97,7 +97,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 263fd65bb22269c4eb78e0d642d8e4eb, type: 2}
+  m_Motion: {fileID: 7400000, guid: f602c0b298c03254ebdb963eafd4d28d, type: 2}
   m_Tag: 
   m_SpeedParameter: PausedSpeed
   m_MirrorParameter: 
@@ -149,7 +149,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d183aa9308b432d4f8b6e417b6a37dcd, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8846011a1298d0141a1564a09a6c1b9a, type: 2}
   m_Tag: 
   m_SpeedParameter: PausedSpeed
   m_MirrorParameter: 
@@ -424,7 +424,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6b38b23e183ecb44b86029fc02ba0e8f, type: 2}
+  m_Motion: {fileID: 7400000, guid: b588cd4a5e36af0488349c02e34eed7f, type: 2}
   m_Tag: 
   m_SpeedParameter: PausedSpeed
   m_MirrorParameter: 
@@ -478,7 +478,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3bd78aadb8cfe2c49b0d0a976f55e217, type: 2}
+  m_Motion: {fileID: 7400000, guid: a07f193158423894aba078c2b973b185, type: 2}
   m_Tag: 
   m_SpeedParameter: PausedSpeed
   m_MirrorParameter: 
@@ -530,7 +530,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 73527fe4fe1db8f47af7902312046bd6, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7f7232af60748d34aa6df8faf9da89c8, type: 2}
   m_Tag: 
   m_SpeedParameter: PausedSpeed
   m_MirrorParameter: 
