@@ -925,7 +925,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -1101,7 +1101,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -1495,7 +1495,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -2382,7 +2382,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -3041,7 +3041,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -4832,7 +4832,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -5014,7 +5014,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -6910,7 +6910,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -8295,6 +8295,10 @@ PrefabInstance:
     - target: {fileID: 1831360887, guid: 17a2571c9aa79484c8c2c50ad39109e2, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831360887, guid: 17a2571c9aa79484c8c2c50ad39109e2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2014933243, guid: 17a2571c9aa79484c8c2c50ad39109e2, type: 3}
       propertyPath: commandArray.Array.size
@@ -10197,7 +10201,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -11518,7 +11522,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -12335,7 +12339,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -12431,7 +12435,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -12630,7 +12634,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -13630,7 +13634,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -14448,7 +14452,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
@@ -15180,7 +15184,7 @@ PrefabInstance:
     - target: {fileID: 1805892641478274172, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
       propertyPath: UpcomingCommandType
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805892641478274173, guid: ec1c8060be43a48478f66f4baf4ffe40,
         type: 3}
