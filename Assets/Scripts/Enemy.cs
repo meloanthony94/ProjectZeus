@@ -7,13 +7,6 @@ using UnityEngine;
 [Serializable]
 public class Enemy : MonoBehaviour
 {
-    //Enums
-    // public enum Type
-    // {
-    //     Empty, Rock, Paper, Sissors
-    // }
-
-
     public AudioClip deathClip;
     public AudioClip attackClip;
 
@@ -95,25 +88,16 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       //if (Input.GetKeyDown(KeyCode.Alpha1))
-       //{
-       //    TypeSwap(entityType.Type.Empty);
-       //}
-       //
-       //if (Input.GetKeyDown(KeyCode.Alpha2))
-       //{
-       //    TypeSwap(entityType.Type.Rock);
-       //}
-       //
-       //if (Input.GetKeyDown(KeyCode.Alpha3))
-       //{
-       //    TypeSwap(entityType.Type.Paper);
-       //}
-       //
-       //if (Input.GetKeyDown(KeyCode.Alpha4))
-       //{
-       //    TypeSwap(entityType.Type.Sissors);
-       //}       
+        if (highway.constantRef.IsPaused)
+        {
+            //pause animations
+            currentAnimator.SetFloat("PausedSpeed", 0);
+        }
+        else
+        {
+            //resume animations
+            currentAnimator.SetFloat("PausedSpeed", 1);
+        }
     }
 
     private void OnMouseEnter()

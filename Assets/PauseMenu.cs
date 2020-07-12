@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
@@ -17,6 +18,15 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     Constant gameConstants;
 
+    [SerializeField]
+    Animator levelAnimator;
+
+    [SerializeField]
+    GameObject cameraCover;
+
+    public Image PauseTextRenderer;
+    public Sprite[] PauseTextImages;
+
     bool hasWon = false;
     private int delayCount = 0;
 
@@ -26,6 +36,19 @@ public class PauseMenu : MonoBehaviour
         {
             pausePanel.SetActive(!pausePanel.activeInHierarchy);
             gameConstants.IsPaused = pausePanel.activeInHierarchy;
+
+            if (gameConstants.IsPaused)
+            {
+                levelAnimator.SetFloat("pausedSpeed", 0);
+                PauseTextRenderer.sprite = PauseTextImages[1];
+            }
+            else
+            {
+                levelAnimator.SetFloat("pausedSpeed", 1);
+                PauseTextRenderer.sprite = PauseTextImages[0];
+            }
+
+            cameraCover.SetActive(gameConstants.IsPaused);
         }
 
         if(!gameConstants.IsPaused)
