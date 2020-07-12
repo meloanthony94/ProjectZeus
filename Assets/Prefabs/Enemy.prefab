@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 350967777}
   - component: {fileID: 350967776}
   - component: {fileID: 7944061940105165893}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 868367671}
   - component: {fileID: 868367670}
   - component: {fileID: 4446833810279149927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 1679727679}
   - component: {fileID: 1679727681}
   - component: {fileID: 1679727680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -282,7 +282,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1679727680
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 1780268714}
   - component: {fileID: 1780268713}
   - component: {fileID: 3642286447269312134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 2144693681}
   - component: {fileID: 2144693680}
   - component: {fileID: 8845649955255180749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sissors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 6881012348898741379}
   - component: {fileID: 6881012348898741376}
   - component: {fileID: 744885819}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
