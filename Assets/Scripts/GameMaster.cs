@@ -31,7 +31,9 @@ public class GameMaster : MonoBehaviour
     {
         if (isCooldown)
         {
-            if (Time.frameCount - cooldownCount > gameConstant.COOLDOWN_SPEED)
+            int progress = Time.frameCount - cooldownCount;
+            gameState.CooldownProgress = (float)progress / gameConstant.COOLDOWN_SPEED;
+            if (progress > gameConstant.COOLDOWN_SPEED)
             {
                 gameState.CanSelect = true;
                 isCooldown = false;
