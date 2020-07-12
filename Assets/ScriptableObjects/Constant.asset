@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e08ad278ffc15c545b733a81ee07c4ec, type: 3}
   m_Name: Constant
   m_EditorClassIdentifier: 
-  frameSpeed: 120
   targetFrameRate: 60
-  cooldownSpeed: 240
+  frameSpeed: 120
+  cooldownSpeed: 60

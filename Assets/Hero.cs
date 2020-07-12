@@ -51,7 +51,7 @@ public class Hero : MonoBehaviour
             if ((enemyHighwayRef.frameCount) % constantRef.FRAME_SPEED == 0)
             {
                 //process next command
-                if (commandIndex < commandGenerator.commandCount)
+                if (commandIndex < commandGenerator.commandCount -1)
                 {
                     commandIndex++;
                     currentHeroType = commandGenerator.commandArray[commandIndex].heroCommandType;
@@ -73,6 +73,7 @@ public class Hero : MonoBehaviour
         {
             //Win
             WinEvent.Invoke();
+            return;
         }
 
         //Dont do anything if the space is empty
