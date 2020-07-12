@@ -681,9 +681,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 6349081095388025483, guid: f1393259ccca2514495587db539da914,
+    m_HighlightedSprite: {fileID: 2167495340702263440, guid: f1393259ccca2514495587db539da914,
       type: 3}
-    m_PressedSprite: {fileID: -3673718131546690439, guid: f1393259ccca2514495587db539da914,
+    m_PressedSprite: {fileID: -2888010956659976342, guid: f1393259ccca2514495587db539da914,
       type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -1790,7 +1790,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8720513266034893208}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
