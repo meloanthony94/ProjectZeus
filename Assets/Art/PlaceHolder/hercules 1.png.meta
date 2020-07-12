@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 71412584ba1b68d409d9b62d0627ce2a
+guid: b0bde90c689cc594a9f482665cbfa0de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3602300314253070724
-    second: FireTitanWalk_0
-  - first:
-      213: -393177680508780352
-    second: FireTitanWalk_0
-  - first:
-      213: 3862246710668571823
-    second: FireTitanWalk_1
-  - first:
-      213: -4412386710165723463
-    second: FireTitanWalk_2
-  - first:
-      213: 7132259935089072366
-    second: FireTitanWalk_1
-  - first:
-      213: 6403712489806524431
-    second: FireTitanWalk_2
+      213: -1880457309873896070
+    second: hercules 1_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,14 +43,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1024
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -103,27 +88,27 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FireTitanWalk_0
+      name: hercules 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 218
+        y: 46
+        width: 448
+        height: 844
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,50 +116,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c089a39bf62b8af0800000000000000
-      internalID: -393177680508780352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireTitanWalk_1
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee81cb46f90eaf260800000000000000
-      internalID: 7132259935089072366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireTitanWalk_2
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0076a6c49e8ed850800000000000000
-      internalID: 6403712489806524431
+      spriteID: a750ead2a0647e5e0800000000000000
+      internalID: -1880457309873896070
       vertices: []
       indices: 
       edges: []
