@@ -72,7 +72,7 @@ public class Hero : MonoBehaviour
                     }
 
                     heroAnimator.SetInteger("EntityType", (int)currentHeroType);
-                    debugIcon.ChangeIcon((int)currentHeroType);
+                    //debugIcon.ChangeIcon((int)currentHeroType);
                 }
             }
 
