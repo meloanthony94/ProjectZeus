@@ -67,7 +67,7 @@ public class EnemyHighway : MonoBehaviour
                 if (frameCount % constantRef.FRAME_SPEED == 0)
                 {
                     // move
-                    this.gameObject.transform.position += new Vector3(-spacing * transform.localScale.x, 0, 0);
+                    this.gameObject.transform.position += new Vector3(spacing * transform.localScale.x, 0, 0);
 
                     enemyArray[currentIndex].gameObject.SetActive(false);
 

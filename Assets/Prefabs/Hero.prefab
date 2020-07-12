@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1831360888}
   - component: {fileID: 1831360890}
   - component: {fileID: 1831360889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Debug Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 3907813998291393096}
   - component: {fileID: 3907813998291391927}
   - component: {fileID: 2014933243}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,6 +357,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Command [3]
       objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
 --- !u!4 &1805892641592195423 stripped
@@ -448,6 +453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Command [6]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
@@ -541,6 +551,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Command [7]
       objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
 --- !u!114 &1805892641264390272 stripped
@@ -632,6 +647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Command [2]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
@@ -725,6 +745,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Command [5]
       objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
 --- !u!114 &1805892642181737012 stripped
@@ -816,6 +841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Command [1]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
@@ -909,6 +939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Command [0]
       objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
 --- !u!114 &1805892642229732308 stripped
@@ -1000,6 +1035,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Command [4]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
@@ -1093,6 +1133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Command [8]
       objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
 --- !u!4 &1805892642803988713 stripped
@@ -1184,6 +1229,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Command [9]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805892641478274175, guid: ec1c8060be43a48478f66f4baf4ffe40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1c8060be43a48478f66f4baf4ffe40, type: 3}
