@@ -6209,6 +6209,11 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3907813998291393097, guid: 17a2571c9aa79484c8c2c50ad39109e2,
+        type: 3}
+      propertyPath: enemyHighwayRef
+      value: 
+      objectReference: {fileID: 898927641}
     - target: {fileID: 3907813998291393099, guid: 17a2571c9aa79484c8c2c50ad39109e2,
         type: 3}
       propertyPath: m_Name
@@ -7556,24 +7561,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 729254229}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1401387979 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -734917271751898193, guid: 36e3e26a214c819469e90fa39eedd270,
-    type: 3}
-  m_PrefabInstance: {fileID: 1815558425}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1401387982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401387979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1430653940
 PrefabInstance:
   m_ObjectHideFlags: 0
