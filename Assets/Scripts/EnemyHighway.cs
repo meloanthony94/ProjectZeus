@@ -56,7 +56,7 @@ public class EnemyHighway : MonoBehaviour
         }
 #endif
 
-        if (Application.isPlaying && isMoving)
+        if (Application.isPlaying && isMoving && !constantRef.IsPaused)
         {
             // Move Enemy
             frameCount = Time.frameCount;

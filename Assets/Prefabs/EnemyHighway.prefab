@@ -47,9 +47,9 @@ MonoBehaviour:
     type: 3}
   e_populateEnemy: 0
   enemyCount: 0
-  spacing: 0.5
+  spacing: 1.2
   currentIndex: 0
-  frameCount: 11
+  frameCount: 0
   visibleCount: 6
   isMoving: 1
   enemyArray: []
