@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2358147495042419855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2358147495042419841}
+  - component: {fileID: 2358147495042419840}
+  m_Layer: 0
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2358147495042419841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358147495042419855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2358147495042419840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358147495042419855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54df728f53eb9347ab4af6963645e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultPointer: {fileID: 2800000, guid: 9be01ee8b7c14a24eace8c74820e449c, type: 3}
+  clickPointer: {fileID: 2800000, guid: bebcb19378ddead4c9ea658427150ffb, type: 3}
+  waitPointer: {fileID: 2800000, guid: 5a38d6823b7d68749b9232c4862e4a95, type: 3}
+  waitPointers:
+  - {fileID: 2800000, guid: 5a38d6823b7d68749b9232c4862e4a95, type: 3}
+  - {fileID: 2800000, guid: 3f49a7a5fe43e4e4fbf3ffd11524efe7, type: 3}
+  - {fileID: 2800000, guid: 16d71512d42eb3e4a99bcdfe7aae8eb6, type: 3}
+  - {fileID: 2800000, guid: 023936c54fa87044aa4224deb7df6472, type: 3}
+  - {fileID: 2800000, guid: d7d96375b6f9c2248be403e2c17fc24e, type: 3}
+  gameState: {fileID: 11400000, guid: 189a094a728be724e89dd70894c3e00c, type: 2}
