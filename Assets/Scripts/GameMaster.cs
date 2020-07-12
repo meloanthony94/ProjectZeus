@@ -32,7 +32,6 @@ public class GameMaster : MonoBehaviour
     {
         // Set the resolution to make it work in WebGL
         // Forced fullscreen
-        Screen.SetResolution(1920, 1080, true);
     }
 
     // Update is called once per frame
