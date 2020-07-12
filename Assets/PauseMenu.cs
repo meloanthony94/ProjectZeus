@@ -80,10 +80,10 @@ public class PauseMenu : MonoBehaviour
 
     public void FailedLevel()
     {
-        //failPanel.SetActive(true);
-        //gameConstants.IsPaused = true;
-        //gameConstants.HasFailed = true;
-        //gameConstants.GameStateChange?.Invoke(2);
+        failPanel.SetActive(true);
+        gameConstants.IsPaused = true;
+        gameConstants.HasFailed = true;
+        gameConstants.GameStateChange?.Invoke(2);
     }
 
     public void ExitLevel()
