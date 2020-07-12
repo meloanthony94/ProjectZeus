@@ -27,6 +27,8 @@ public class Hero : MonoBehaviour
 
     int commandIndex = 0;
 
+    public AudioClip attackClip;
+    private AudioSource audioSource;
 
     //Debug Only
     [SerializeField]
@@ -35,6 +37,8 @@ public class Hero : MonoBehaviour
     private void Awake()
     {
         heroAnimator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     // Start is called before the first frame update
@@ -77,7 +81,7 @@ public class Hero : MonoBehaviour
             WinEvent.Invoke();
             return;
         }
-
+        
         //Dont do anything if the space is empty
         if (e.myType == entityType.Type.Empty)
         {
@@ -86,6 +90,7 @@ public class Hero : MonoBehaviour
         else
         {
             heroAnimator.SetTrigger("Attack");
+            PlayAttackSound();
         }
 
         switch (currentHeroType)
@@ -138,5 +143,11 @@ public class Hero : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void PlayAttackSound()
+    {
+        audioSource.clip = attackClip;
+        audioSource.PlayDelayed(0.2f);
     }
 }
