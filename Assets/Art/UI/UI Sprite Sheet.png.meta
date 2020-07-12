@@ -503,7 +503,7 @@ TextureImporter:
         serializedVersion: 2
         x: 375
         y: 7384
-        width: 1786
+        width: 2863
         height: 422
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -514,27 +514,6 @@ TextureImporter:
       bones: []
       spriteID: 8612905eeafcdb2c0800000000000000
       internalID: -4414143709679378072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI Sprite Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 2240
-        y: 7384
-        width: 996
-        height: 422
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e597ae58db3b7690800000000000000
-      internalID: -7603417745397934621
       vertices: []
       indices: 
       edges: []
