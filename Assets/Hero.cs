@@ -52,6 +52,9 @@ public class Hero : MonoBehaviour
     {
         if (Application.isPlaying && enemyHighwayRef.isMoving && !constantRef.IsPaused)
         {
+            //resume animations
+            heroAnimator.SetFloat("PausedSpeed", 1);
+
             if ((enemyHighwayRef.frameCount) % constantRef.FRAME_SPEED == 0)
             {
                 //process next command
@@ -68,6 +71,11 @@ public class Hero : MonoBehaviour
             {
                 CheckEnemy();
             }
+        }
+        else if(constantRef.IsPaused)
+        {
+            //pause animations
+            heroAnimator.SetFloat("PausedSpeed", 0);
         }
     }
 
