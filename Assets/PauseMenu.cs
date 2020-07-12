@@ -30,8 +30,22 @@ public class PauseMenu : MonoBehaviour
     bool hasWon = false;
     private int delayCount = 0;
 
+    [SerializeField]
+    GameObject LevelImage;
+
+    float leveltimer = 0;
+
     private void Update()
     {
+        if(leveltimer < 4)
+        {
+            leveltimer += Time.deltaTime;
+        }
+        else
+        {
+            LevelImage.SetActive(false);
+        }
+
         if (Input.GetKeyDown(KeyCode.P) && gameConstants.HasFailed == false && hasWon == false)
         {
             pausePanel.SetActive(!pausePanel.activeInHierarchy);

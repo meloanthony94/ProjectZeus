@@ -11154,6 +11154,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4132163321189908744, guid: f1393259ccca2514495587db539da914,
         type: 3}
+    - target: {fileID: 1484261381, guid: bec1f39c253188e4396077890a497977, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6530811040275028870, guid: f1393259ccca2514495587db539da914,
+        type: 3}
     - target: {fileID: 4936270552362351626, guid: bec1f39c253188e4396077890a497977,
         type: 3}
       propertyPath: m_AnchorMax.x
