@@ -24,6 +24,7 @@ public class Hero : MonoBehaviour
     UnityEvent LoseEvent;
 
     Animator heroAnimator;
+    public Animator indicatorAnimator;
 
     int commandIndex = 0;
 
@@ -44,7 +45,8 @@ public class Hero : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        currentHeroType = commandGenerator.commandArray[0].heroCommandType;
+        heroAnimator.SetInteger("EntityType", (int)currentHeroType);
     }
 
     // Update is called once per frame
@@ -62,6 +64,13 @@ public class Hero : MonoBehaviour
                 {
                     commandIndex++;
                     currentHeroType = commandGenerator.commandArray[commandIndex].heroCommandType;
+                    entityType.Type nextType = commandGenerator.commandArray[commandIndex].UpcomingCommandType;
+                    if (nextType != entityType.Type.Empty)
+                    {
+                        indicatorAnimator.SetTrigger("Thinking");
+                        indicatorAnimator.SetInteger("ToState",(int)nextType);
+                    }
+
                     heroAnimator.SetInteger("EntityType", (int)currentHeroType);
                     debugIcon.ChangeIcon((int)currentHeroType);
                 }
