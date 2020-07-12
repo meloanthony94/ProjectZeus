@@ -5498,6 +5498,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 465397513}
     m_Modifications:
+    - target: {fileID: 1575187439562752743, guid: ce97ad2f5f383a846b301d6c8c945636,
+        type: 3}
+      propertyPath: clickAudioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d3e29591d0ea04948b529ef444f988c2, type: 3}
+    - target: {fileID: 1575187439562752743, guid: ce97ad2f5f383a846b301d6c8c945636,
+        type: 3}
+      propertyPath: clickAudioClip.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: acad3d301545ffd48951b0839c2fcae9, type: 3}
     - target: {fileID: -8679921383154817045, guid: fbd120ecbf3a9db47a4a5d6b0a381cdd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5558,16 +5568,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: grassPadA (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 1575187439562752743, guid: ce97ad2f5f383a846b301d6c8c945636,
-        type: 3}
-      propertyPath: clickAudioClip.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: d3e29591d0ea04948b529ef444f988c2, type: 3}
-    - target: {fileID: 1575187439562752743, guid: ce97ad2f5f383a846b301d6c8c945636,
-        type: 3}
-      propertyPath: clickAudioClip.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: acad3d301545ffd48951b0839c2fcae9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbd120ecbf3a9db47a4a5d6b0a381cdd, type: 3}
 --- !u!4 &703987635 stripped
@@ -8634,6 +8634,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907813998291393099, guid: 17a2571c9aa79484c8c2c50ad39109e2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a2571c9aa79484c8c2c50ad39109e2, type: 3}
