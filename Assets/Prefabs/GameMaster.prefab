@@ -43,4 +43,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f91448df179a544db0c2989dceffd2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetFramerate: 60
+  gameState: {fileID: 11400000, guid: 189a094a728be724e89dd70894c3e00c, type: 2}
+  gameConstant: {fileID: 11400000, guid: 9f29d29876a70a547a4d6d2682f558c5, type: 2}
+  LoseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: FailedLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  WinEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: WonLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

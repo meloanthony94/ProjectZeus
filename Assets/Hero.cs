@@ -46,7 +46,7 @@ public class Hero : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Application.isPlaying && enemyHighwayRef.isMoving)
+        if (Application.isPlaying && enemyHighwayRef.isMoving && !constantRef.IsPaused)
         {
             if ((enemyHighwayRef.frameCount) % constantRef.FRAME_SPEED == 0)
             {

@@ -15,6 +15,18 @@ public class Constant : ScriptableObject
     [SerializeField]
     private int cooldownSpeed = 60;
 
+    [SerializeField]
+    private int postWinDelay = 60;
+
+    [SerializeField]
+    private bool isPaused = false;
+
+    [SerializeField]
+    private bool hasFailed = false;
+
+    [SerializeField]
+    private int currentLevel = 0;
+
     public int TARGET_FRAMERATE
     {
         get => targetFrameRate;
@@ -30,4 +42,9 @@ public class Constant : ScriptableObject
     {
         get => cooldownSpeed;
     }
+
+    public bool IsPaused { get => isPaused; set => isPaused = value; }
+    public bool HasFailed { get => hasFailed; set => hasFailed = value; }
+    public int PostWinDelay { get => postWinDelay;}
+    public int CurrentLevel { get => currentLevel; set => currentLevel = value; }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameMaster : MonoBehaviour
 {
@@ -10,6 +11,14 @@ public class GameMaster : MonoBehaviour
     // Cooldown
     private int cooldownCount = 0;
     private bool isCooldown = false;
+
+    //Events
+    [SerializeField]
+    UnityEvent LoseEvent;
+    [SerializeField]
+    UnityEvent WinEvent;
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -29,7 +38,7 @@ public class GameMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isCooldown)
+        if (isCooldown && !gameConstant.IsPaused)
         {
             int progress = Time.frameCount - cooldownCount;
             gameState.CooldownProgress = (float)progress / gameConstant.COOLDOWN_SPEED;
@@ -55,11 +64,11 @@ public class GameMaster : MonoBehaviour
 
     public void HandleWinState()
     {
-
+        WinEvent.Invoke();
     }
 
     public void HandleLoseState()
     {
-
+        LoseEvent.Invoke();
     }
 }
