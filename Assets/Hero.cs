@@ -34,7 +34,7 @@ public class Hero : MonoBehaviour
 
     private void Awake()
     {
-        //heroAnimator.GetComponent<Animator>();
+        heroAnimator = GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
@@ -55,11 +55,12 @@ public class Hero : MonoBehaviour
                 {
                     commandIndex++;
                     currentHeroType = commandGenerator.commandArray[commandIndex].heroCommandType;
+                    heroAnimator.SetInteger("EntityType", (int)currentHeroType);
                     debugIcon.ChangeIcon((int)currentHeroType);
                 }
             }
 
-            if ((enemyHighwayRef.frameCount + 1) % constantRef.FRAME_SPEED == 0)
+            if ((enemyHighwayRef.frameCount - 1) % constantRef.FRAME_SPEED == 0)
             {
                 CheckEnemy();
             }
@@ -68,8 +69,9 @@ public class Hero : MonoBehaviour
 
     void CheckEnemy()
     {
+        Enemy e = enemyHighwayRef.GetEnemy();
 
-        if(enemyHighwayRef.GetEnemy() == null)
+        if(e == null)
         {
             //Win
             WinEvent.Invoke();
@@ -77,18 +79,24 @@ public class Hero : MonoBehaviour
         }
 
         //Dont do anything if the space is empty
-        if (enemyHighwayRef.GetEnemy().myType == entityType.Type.Empty)
+        if (e.myType == entityType.Type.Empty)
         {
             return;
+        }
+        else
+        {
+            heroAnimator.SetTrigger("Attack");
         }
 
         switch (currentHeroType)
         {
             case entityType.Type.Rock:
-                if (enemyHighwayRef.GetEnemy().myType == entityType.Type.Sissors)
+                if (e.myType == entityType.Type.Sissors)
                 {
                     print("Victory");
                     //trigger enemy death state
+                    e.Kill();
+                    
                 }
                 else
                 {
@@ -99,10 +107,11 @@ public class Hero : MonoBehaviour
                 break;
 
             case entityType.Type.Paper:
-                if (enemyHighwayRef.GetEnemy().myType == entityType.Type.Rock)
+                if (e.myType == entityType.Type.Rock)
                 {
                     print("Victory");
                     //trigger enemy death state
+                    e.Kill();
                 }
                 else
                 {
@@ -113,10 +122,11 @@ public class Hero : MonoBehaviour
                 break;
 
             case entityType.Type.Sissors:
-                if (enemyHighwayRef.GetEnemy().myType == entityType.Type.Sissors)
+                if (e.myType == entityType.Type.Sissors)
                 {
                     print("Victory");
                     //trigger enemy death state
+                    e.Kill();
                 }
                 else
                 {

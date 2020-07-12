@@ -65,6 +65,8 @@ public class Enemy : MonoBehaviour
     public EnemyHighway highway;
     public GameState gameState;
 
+    public bool Selectable = true;
+
 
 
     // Start is called before the first frame update
@@ -105,7 +107,7 @@ public class Enemy : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (gameState.CanSelect)
+        if (Selectable && gameState.CanSelect)
         {
             isHoveredFlag = true;
             if (CurrentSelection != SelectedState.Selected)
@@ -127,7 +129,7 @@ public class Enemy : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (gameState.CanSelect)
+        if (Selectable && gameState.CanSelect)
         {
             //check for cooldown
             //report my index
@@ -151,5 +153,20 @@ public class Enemy : MonoBehaviour
 
         currentAnimator = TypeVisuals[(int)myType].GetComponent<Animator>();
         CurrentSelection = SelectedState.Default;
+    }
+
+    public void Lock()
+    {
+        Selectable = false;
+    }
+
+    public void Attack()
+    {
+        currentAnimator.SetTrigger("Attack");
+    }
+
+    public void Kill()
+    {
+        currentAnimator.SetTrigger("AttackReflection");
     }
 }

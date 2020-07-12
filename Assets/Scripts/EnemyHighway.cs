@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -40,6 +41,7 @@ public class EnemyHighway : MonoBehaviour
         {
             enemyArray[i].gameObject.SetActive(i < maxCount ? true : false);
         }
+        enemyArray[0].Lock();
     }
 
     // Update is called once per frame
@@ -77,6 +79,8 @@ public class EnemyHighway : MonoBehaviour
                     }
 
                     currentIndex++;
+                    enemyArray[currentIndex].Lock();
+                    enemyArray[currentIndex].Attack();
 
                 }
             }

@@ -6199,16 +6199,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.8
       objectReference: {fileID: 0}
-    - target: {fileID: 3907813998291393096, guid: 17a2571c9aa79484c8c2c50ad39109e2,
+    - target: {fileID: 3907813998291391927, guid: 17a2571c9aa79484c8c2c50ad39109e2,
         type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907813998291393096, guid: 17a2571c9aa79484c8c2c50ad39109e2,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 88d142105658f794598ded7ee6c1bc80, type: 2}
     - target: {fileID: 3907813998291393097, guid: 17a2571c9aa79484c8c2c50ad39109e2,
         type: 3}
       propertyPath: enemyHighwayRef
