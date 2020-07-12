@@ -6,4 +6,7 @@ public class HeroCommand : MonoBehaviour
 {
     [SerializeField]
     public entityType.Type heroCommandType = entityType.Type.Rock;
+
+    [SerializeField]
+    public entityType.Type UpcomingCommandType = entityType.Type.Rock;
 }
