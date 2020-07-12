@@ -22,7 +22,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && gameConstants.HasFailed == false)
+        if (Input.GetKeyDown(KeyCode.P) && gameConstants.HasFailed == false && hasWon == false)
         {
             pausePanel.SetActive(!pausePanel.activeInHierarchy);
             gameConstants.IsPaused = pausePanel.activeInHierarchy;
