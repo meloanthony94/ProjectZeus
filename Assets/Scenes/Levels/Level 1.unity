@@ -461,6 +461,11 @@ PrefabInstance:
       propertyPath: highway
       value: 
       objectReference: {fileID: 719153992}
+    - target: {fileID: 6881012348898741379, guid: 252f02c0caba7a044a99c670ff46b2e8,
+        type: 3}
+      propertyPath: myType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6881012348898741501, guid: 252f02c0caba7a044a99c670ff46b2e8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -781,6 +786,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6148031333993306137, guid: bec1f39c253188e4396077890a497977,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.099853516
+      objectReference: {fileID: 0}
     - target: {fileID: 8720513266912430544, guid: bec1f39c253188e4396077890a497977,
         type: 3}
       propertyPath: m_Name

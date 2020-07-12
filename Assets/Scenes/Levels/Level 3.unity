@@ -518,6 +518,11 @@ PrefabInstance:
       propertyPath: highway
       value: 
       objectReference: {fileID: 719153992}
+    - target: {fileID: 6881012348898741379, guid: 252f02c0caba7a044a99c670ff46b2e8,
+        type: 3}
+      propertyPath: myType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6881012348898741501, guid: 252f02c0caba7a044a99c670ff46b2e8,
         type: 3}
       propertyPath: m_LocalPosition.x
