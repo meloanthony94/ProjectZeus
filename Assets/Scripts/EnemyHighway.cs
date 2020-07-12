@@ -33,6 +33,14 @@ public class EnemyHighway : MonoBehaviour
     private Enemy selectHolder;
     public GameState gameState;
 
+    public AudioClip[] clickAudioClip;
+    private AudioSource audio;
+
+    private void Awake()
+    {
+        audio = GetComponent<AudioSource>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,8 +87,11 @@ public class EnemyHighway : MonoBehaviour
                     }
 
                     currentIndex++;
-                    enemyArray[currentIndex].Lock();
-                    enemyArray[currentIndex].Attack();
+                    if (currentIndex < enemyCount)
+                    {
+                        enemyArray[currentIndex].Lock();
+                        enemyArray[currentIndex].Attack();
+                    }
 
                 }
             }
@@ -140,6 +151,8 @@ public class EnemyHighway : MonoBehaviour
 
     public void Register(Enemy e)
     {
+        if (constantRef.IsPaused) return;
+
         // already have something
         if (selectHolder)
         {
@@ -149,10 +162,12 @@ public class EnemyHighway : MonoBehaviour
             e.TypeSwap(tmpType);
             selectHolder = null;
             gameState.TriggerCoolDown?.Invoke();
+            audio.PlayOneShot(clickAudioClip[1]);
         }
         else
         {
             selectHolder = e;
+            audio.PlayOneShot(clickAudioClip[0]);
         }
     }
 }

@@ -13,6 +13,9 @@ public class CursorHandler : MonoBehaviour
 
     public GameState gameState;
 
+    public AudioClip errorClip;
+    private AudioSource audio;
+
     private enum CursorState
     {
         Default,
@@ -21,6 +24,11 @@ public class CursorHandler : MonoBehaviour
     }
 
     private CursorState currentState = CursorState.Default;
+
+    private void Awake()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +44,10 @@ public class CursorHandler : MonoBehaviour
         
         if (!gameState.CanSelect)
         {
+            //if (Input.GetMouseButtonDown(0))
+            //{
+            //    audio.PlayOneShot(errorClip);
+            //}
             newState = CursorState.Wait;
         }
 

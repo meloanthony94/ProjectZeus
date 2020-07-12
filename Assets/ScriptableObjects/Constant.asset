@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFrameRate: 60
   frameSpeed: 180
-  cooldownSpeed: 0
+  cooldownSpeed: 10
   postWinDelay: 60
-  isPaused: 1
-  hasFailed: 1
+  isPaused: 0
+  hasFailed: 0
   currentLevel: 0

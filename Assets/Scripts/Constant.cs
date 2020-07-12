@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [CreateAssetMenu(fileName = "Constant", menuName = "ScriptableObject/Constant")]
 [System.Serializable]
@@ -26,6 +27,8 @@ public class Constant : ScriptableObject
 
     [SerializeField]
     private int currentLevel = 0;
+
+    public Action<int> GameStateChange;
 
     public int TARGET_FRAMERATE
     {

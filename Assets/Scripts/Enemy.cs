@@ -1,16 +1,23 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
 
 [Serializable]
 public class Enemy : MonoBehaviour
 {
     //Enums
-  // public enum Type
-  // {
-  //     Empty, Rock, Paper, Sissors
-  // }
+    // public enum Type
+    // {
+    //     Empty, Rock, Paper, Sissors
+    // }
+
+
+    public AudioClip deathClip;
+    public AudioClip attackClip;
+
+    private AudioSource audioSource;
 
     enum SelectedState
     {
@@ -68,6 +75,10 @@ public class Enemy : MonoBehaviour
     public bool Selectable = true;
 
 
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -163,10 +174,24 @@ public class Enemy : MonoBehaviour
     public void Attack()
     {
         currentAnimator.SetTrigger("Attack");
+        PlayAttackSound();
     }
 
     public void Kill()
     {
         currentAnimator.SetTrigger("AttackReflection");
+        PlayDeathSound();
+    }
+
+    public void PlayAttackSound()
+    {
+        audioSource.clip = attackClip;
+        audioSource.PlayDelayed(0.2f);
+    }
+
+    public void PlayDeathSound()
+    {
+        audioSource.clip = deathClip;
+        audioSource.PlayDelayed(0.5f);
     }
 }

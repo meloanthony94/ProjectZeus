@@ -46,10 +46,12 @@ public class PauseMenu : MonoBehaviour
         {
             hasWon = true;
             delayCount = Time.frameCount;
+            gameConstants.GameStateChange?.Invoke(3); //change to 1 if it is different from winning the last level
         }
         else
         {
             WinPanel.SetActive(true);
+            gameConstants.GameStateChange?.Invoke(3);
         }
     }
 
@@ -58,6 +60,7 @@ public class PauseMenu : MonoBehaviour
         failPanel.SetActive(true);
         gameConstants.IsPaused = true;
         gameConstants.HasFailed = true;
+        gameConstants.GameStateChange?.Invoke(2);
     }
 
     public void ExitLevel()
@@ -72,6 +75,7 @@ public class PauseMenu : MonoBehaviour
         gameConstants.IsPaused = false;
         gameConstants.HasFailed = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
     }
 
     public void ResetfromStart()
